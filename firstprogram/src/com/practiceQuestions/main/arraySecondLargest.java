@@ -1,19 +1,23 @@
 package com.practiceQuestions.main;
 
 public class arraySecondLargest {
-    //    public static int secondLargestElement(int arr[]) {
-//        int n = arr.length;
-//        int max = Integer.MIN_VALUE;
-//        int secMax = Integer.MIN_VALUE;     // THIS APPROACH ONLY FOR SORTED ARRAYS
-//        for (int i = 0; i < n; i++) {
-//            if (max < arr[i]) {
-//                secMax = max;
-//                max = arr[i];
-//            }
-//        }
-//        return secMax;
-//    }
     /*
+        public static int secondLargestElement(int arr[]) {
+        int n = arr.length;
+        int max = Integer.MIN_VALUE;
+        int secMax = Integer.MIN_VALUE;     // THIS APPROACH ONLY FOR SORTED ARRAYS
+        for (int i = 0; i < n; i++) {
+            if (max < arr[i]) {      // 1,2,3,4,4,2,1,0
+                secMax = max;
+                max = arr[i];
+            }
+        }
+        return secMax;
+    }
+
+     */
+    /*
+
     public static int secondLargestElement(int arr[]) {
         int n = arr.length;
         int max = Integer.MIN_VALUE;
@@ -29,11 +33,15 @@ public class arraySecondLargest {
     }
 
      */
+
+
+
+
     public static int secondLargestElement(int arr[]) {
-        int n = arr.length;
+        int n = arr.length;   // 1,2,3,4,4,2,1,0,7 ,9 ,5,5
         int max = Integer.MIN_VALUE;
         int secMax = Integer.MIN_VALUE;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {              // MOST EFFICIENT APPROACH
             if (max < arr[i]) {
                 secMax = max;
                 max = arr[i];
@@ -45,10 +53,14 @@ public class arraySecondLargest {
     }
 
 
+
+
+
+
     public static void main(String[] args) {
 //        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         // int arr[] = {9, 5, 6, 7, 4, 1, 2, 3, 8};
-        int arr[]={1,2,3,4,4,2,1,0};
+        int arr[]={1,2,3,4,4,2,1,0,7 ,9 ,5,5 };
 
 
         System.out.println("second largest element is " + secondLargestElement(arr));
