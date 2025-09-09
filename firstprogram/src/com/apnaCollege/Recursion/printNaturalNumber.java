@@ -2,7 +2,7 @@ package com.apnaCollege.Recursion;
 
 import java.util.*;
 
-public class print_1_to_n {
+public class printNaturalNumber {
     public static void printIncreasing(int n) {
         if (n == 1) {
             System.out.print(1+" ");
@@ -13,11 +13,14 @@ public class print_1_to_n {
 
     }
     public static void printDecreasing(int n) {
+        // Base case
         if (n == 1) {
             System.out.print(1+" ");
             return;
         }
+        // self work
         System.out.print(n+" ");
+        //small problem
         printDecreasing(n-1);
 
     }

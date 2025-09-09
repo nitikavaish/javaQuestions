@@ -2,7 +2,7 @@ package com.apnaCollege.Recursion;
 
 import java.util.*;
 
-public class alternateSignSeries {
+public class alternateSeriesSum {
     public static int seriesSum(int n) {
         if (n == 0) return 0;
 
