@@ -2,7 +2,7 @@ package com.apnaCollege.Recursion;
 
 import java.util.*;
 
-public class keypadCmbinations {
+public class keypadCombinations {
     public static void printCombinations(String dig,String []kp,String res) {// "235"
      if(dig.length()==0){
          System.out.print(res+" ");
@@ -10,7 +10,7 @@ public class keypadCmbinations {
      }
      int currNum=dig.charAt(0)-'0'; // current number matlab 2 press karne par kon
         // kon si choices hai
-     String currChoices=kp[currNum];
+     String currChoices=kp[currNum];  //"abc"
      for(int i=0;i<currChoices.length();i++){
          printCombinations(dig.substring(1),kp,res+currChoices.charAt(i));
      }

@@ -1,8 +1,8 @@
 package com.apnaCollege.Recursion;
 import java.util.*;
-public class reverseStringTwoPointer {
+public class checkPalindromeTwoPointer {
     public static boolean checkPalindrome(String s,int l,int r){
-      if(l>=r) return false;
+      if(l==r) return true;
       if(s.charAt(l)==s.charAt(r)){
           return checkPalindrome(s,l+1,r-1);
 
@@ -12,5 +12,6 @@ public class reverseStringTwoPointer {
         Scanner sc=new Scanner(System.in);
         String s=sc.nextLine();
         boolean check=checkPalindrome(s,0,s.length()-1);
+        System.out.println(check);
     }
 }
